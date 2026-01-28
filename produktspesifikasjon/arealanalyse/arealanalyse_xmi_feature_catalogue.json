@@ -1,7 +1,7 @@
 [
   {
     "name": "GrunnkartFlate",
-    "description": "",
+    "description": "En flate i Grunnkartet som representerer et sammenhengende areal med egenskaper som arealdekke, arealbruk, økosystemtype og tilhørende informasjon om kildedata, brukt som grunnlag for arealanalyser og -regnskap.",
     "attributes": [
       {
         "name": "arealdekkeNiva1",
@@ -43,7 +43,7 @@
       {
         "name": "skogbonitet",
         "type": "Skogbonitet",
-        "cardinality": "0..1",
+        "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/skogbonitet"
         }
@@ -59,7 +59,7 @@
       {
         "name": "arealbrukLandHovedklasse",
         "type": "ArealbrukLandHovedklasse",
-        "cardinality": "0..1",
+        "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhovedklasse"
         }
@@ -67,7 +67,7 @@
       {
         "name": "arealbrukLandUnderklasse",
         "type": "ArealbrukLandUnderklasse",
-        "cardinality": "0..1",
+        "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukunderklasse"
         }
@@ -83,36 +83,36 @@
       {
         "name": "arealbrukHav",
         "type": "ArealbrukHav",
-        "cardinality": "0..1"
+        "cardinality": "1"
       },
       {
         "name": "arealbrukHavKode",
         "type": "ArealbrukHavKode",
-        "cardinality": "0..1",
+        "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhavkode"
         }
       },
       {
-        "name": "okosystemtype1",
-        "type": "Okosystemtype1",
+        "name": "okosystemtypeNiva1",
+        "type": "OkosystemtypeNiva1",
         "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype1"
         }
       },
       {
-        "name": "okosystemtype2",
-        "type": "Okosystemtype2",
-        "cardinality": "0..1",
+        "name": "okosystemtypeNiva2",
+        "type": "OkosystemtypeNiva2",
+        "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype2"
         }
       },
       {
-        "name": "okosystemtype3",
-        "type": "Okosystemtype3",
-        "cardinality": "0..1",
+        "name": "okosystemtypeNiva3",
+        "type": "OkosystemtypeNiva3",
+        "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype3"
         }
@@ -136,7 +136,7 @@
       {
         "name": "arealbrukKilde",
         "type": "ArealbrukKilde",
-        "cardinality": "0..1",
+        "cardinality": "1",
         "valueDomain": {
           "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukkilde"
         }
@@ -190,7 +190,8 @@
     "geometry": {
       "name": "område",
       "type": "GM_MultiSurface",
-      "ogcRole": "primary-geometry"
+      "ogcRole": "primary-geometry",
+      "description": "den geografiske avgrensingen av Grunnkartflaten"
     }
   }
 ]

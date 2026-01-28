@@ -1,7 +1,8 @@
 #### GrunnkartFlate
 
-Geometri:
-- type: GM_MultiSurface
+En flate i Grunnkartet som representerer et sammenhengende areal med egenskaper som arealdekke, arealbruk, økosystemtype og tilhørende informasjon om kildedata, brukt som grunnlag for arealanalyser og -regnskap.
+
+Geometri:<br />Type: GM_MultiSurface
 
 Egenskaper
 
@@ -44,6 +45,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>ArealdekkeNiva1</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/arealdekkeniva1">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/arealdekkeniva1</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -65,6 +70,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>ArealdekkeNiva2</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/arealdekkeniva2">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/arealdekkeniva2</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -85,6 +94,10 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>ArealdekkeKode</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/arealdekkekode">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/arealdekkekode</a></td>
     </tr>
   </tbody>
 </table>
@@ -128,6 +141,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>GrunnforholdKode</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/grunnforholdkode">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/grunnforholdkode</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -143,11 +160,15 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
       <td>Skogbonitet</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/skogbonitet">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/skogbonitet</a></td>
     </tr>
   </tbody>
 </table>
@@ -170,6 +191,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>SkogbonitetKode</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/skogbonitetkode">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/skogbonitetkode</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -185,11 +210,15 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
       <td>ArealbrukLandHovedklasse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhovedklasse">https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhovedklasse</a></td>
     </tr>
   </tbody>
 </table>
@@ -206,11 +235,15 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
       <td>ArealbrukLandUnderklasse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukunderklasse">https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukunderklasse</a></td>
     </tr>
   </tbody>
 </table>
@@ -233,6 +266,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>ArealbrukLandKode</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukkode">https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukkode</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -248,7 +285,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
@@ -269,11 +306,15 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
       <td>ArealbrukHavKode</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhavkode">https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukhavkode</a></td>
     </tr>
   </tbody>
 </table>
@@ -286,7 +327,7 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>okosystemtype1</strong></td>
+      <td><strong>okosystemtypeNiva1</strong></td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -294,7 +335,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>Okosystemtype1</td>
+      <td>OkosystemtypeNiva1</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype1">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype1</a></td>
     </tr>
   </tbody>
 </table>
@@ -307,15 +352,19 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>okosystemtype2</strong></td>
+      <td><strong>okosystemtypeNiva2</strong></td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>Okosystemtype2</td>
+      <td>OkosystemtypeNiva2</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype2">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype2</a></td>
     </tr>
   </tbody>
 </table>
@@ -328,15 +377,19 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>okosystemtype3</strong></td>
+      <td><strong>okosystemtypeNiva3</strong></td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>Okosystemtype3</td>
+      <td>OkosystemtypeNiva3</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype3">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtype3</a></td>
     </tr>
   </tbody>
 </table>
@@ -359,6 +412,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>OkosystemtypeKode</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtypekode">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/okosystemtypekode</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -380,6 +437,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>GrunnkartKilde</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/grunnkartkilde">https://register.geonorge.no/sosi-kodelister/temadata/grunnkart-arealanalyse/grunnkartkilde</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -395,11 +456,15 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
       <td>ArealbrukKilde</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukkilde">https://register.geonorge.no/sosi-kodelister/temadata/ssbarealbruk/ssbarealbrukkilde</a></td>
     </tr>
   </tbody>
 </table>
@@ -421,6 +486,10 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>Kommunenummer</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer">https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer</a></td>
     </tr>
   </tbody>
 </table>
