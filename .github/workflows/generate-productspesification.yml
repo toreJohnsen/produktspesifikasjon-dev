@@ -168,7 +168,7 @@ jobs:
           echo "path=$png" >> "$GITHUB_OUTPUT"
 
       - id: assemble
-        uses: arkitektum/ps.editor.actions/assemble@main
+        uses: arkitektum/ps.editor.actions/assemble@scopes
         with:
           psdata-path: ${{ steps.prepare.outputs.psdata-path }}
           output-path: ${{ steps.prepare.outputs.spec-markdown }}
