@@ -1,0 +1,218 @@
+{
+  "identification": {
+    "id": "a8456aed-441a-40c4-831f-46bcbe4e6ff1",
+    "title": "Arter av nasjonal forvaltningsinteresse",
+    "abstract": "Arter av nasjonal forvaltningsinteresse er et forvaltningsrettet datasett som distribueres av Miljødirektoratet, der datafangsten helt og fullt er basert på dataflyten for artsdata som er etablert av Artsdatabanken. Artsdatabanken har, siden etableringen i 2005, etablert dataflyt med relevante institusjoner og relevante databaser som blir synliggjort i Artskart. Eierskapet til data er avklart og ligger hos originalverten. \n\nArter av nasjonal forvaltningsinteresse består både av arter som trenger beskyttelse og arter som er skadelige (fremmede). Alle relevante artsgrupper er omfattet. Beslutning om hvilke arter som inngår er i all hovedsak tatt i henhold til ulike relevante statuser som arter kan befinne seg i. Trua arter, ansvarsarter og freda arter er eksempler på slike statuser, som i datasettet er definert som utvalgskriterier. \n\nI tillegg til at det er besluttet hvilke arter som skal inngå, er det besluttet to kvalitetsparametere som må være utfylt eller som må fylle noen minstekrav; geografisk presisjon og funksjon (aktivitet). Disse kravene varierer mellom ulike artsgrupper. \n\nKartlagte forekomster av sensitive funksjonsområder for gitte arter, dvs. forekomster som det ikke skal være allmenn tilgang til detaljert informasjon om, er ikke inkludert i dette datasettet.",
+    "purpose": "Formålet med datasettet er å vise leveområder for arter av nasjonal forvaltningsinteresse, som det bør tas spesielt hensyn til i arealplanlegging, eller som det av andre årsaker er nyttig å ha kunnskap om (overvåking, bekjempelsesprosjekt for fremmede arter).",
+    "language": "nor",
+    "keywords": [
+      "Biologisk mangfold",
+      "Arter",
+      "Norge",
+      "Svalbard",
+      "Jan Mayen",
+      "Artsfordeling",
+      "Inspire",
+      "geodataloven",
+      "Det offentlige kartgrunnlaget",
+      "Norge digitalt",
+      "ØkologiskGrunnkart",
+      "modellbaserteVegprosjekter",
+      "fellesDatakatalog",
+      "Natur"
+    ],
+    "topicCategories": [
+      "Biologisk mangfold"
+    ],
+    "dates": {
+      "creation": "2015-02-16",
+      "publication": "2015-02-16",
+      "revision": "2021-01-01",
+      "metadata": "2026-02-01"
+    },
+    "responsibleParties": [
+      {
+        "name": "Seksjon for truede arter og naturtyper",
+        "organization": "Miljødirektoratet",
+        "email": "post@miljodir.no",
+        "role": "owner"
+      },
+      {
+        "name": "Seksjon for kartlegging og geodata",
+        "organization": "Miljødirektoratet",
+        "email": "wms@miljodir.no",
+        "role": "pointOfContact"
+      },
+      {
+        "name": "Seksjon for kartlegging og geodata",
+        "organization": "Miljødirektoratet",
+        "email": "wms@miljodir.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/999601391_miljodirektoratet_liten.png",
+    "supplementalInformation": "Datasettet inneholder: \n\n1. Verdsatte arter - alle - punkt: \nKartlaget viser punktforekomster for arter som har en verdikategori 'Middels', 'Stor' eller 'Svært stor' verdi i henhold til Veileder M-1941 Konsekvensutredning av klima og miljø.\n\n2. Verdsatte arter - alle - områder\nKartlaget viser områderforekomster for arter som har en verdikategori 'Middels', 'Stor' eller 'Svært stor' verdi i henhold til Veileder M-1941 Konsekvensutredning av klima og miljø.\n\n3. Prioriterte arter - punkt\nKartlaget viser punktforekomster for arter som prioritert art etter egen forskrift.\n\n4. Prioriterte arter - områder - Naturbase\nKartlaget viser områdeforekomster for arter som prioritert art etter egen forskrift. Disse områdene er deretter begrenset til de som er levert og delt via Miljødirektoratets Naturbase.\n\n5. Prioriterte arter - områder - alle\nKartlaget viser områdeforekomster for arter som prioritert art etter egen forskrift.\n\n6. Fredete arter - punkt\nKartlaget viser punktforekomster for arter som fredet etter egen forskrift.\n\n7. Fredete arter - områder\nKartlaget viser områdeforekomster for arter som fredet etter egen forskrift.\n\n8. Truede arter - punkt\nKartlaget viser punktforekomster for arter som er truet i henhold til Rødlista for arter.\n\n9. Truede arter - områder\nKartlaget viser områderforekomster for arter som er truet i henhold til Rødlista for arter.\n\n10. Ansvarsarter - punkt\nKartlaget viser punktforekomster for arter som er ansvarsarter (>25% av europeisk bestand i Norge).\n\n11. Ansvarsarter - områder\nKartlaget viser områdeforekomster for arter som er ansvarsarter (>25% av europeisk bestand i Norge).\n\n12. Konvensjonsarter - punkt\nKartlaget viser puntforekomster for arter som inngår i internasjonale konvensjoner vedtatt av Norge, synliggjøres her. Dette er aktuelt for Bern-, Bonn- og OSPAR-konvensjonen. Merk, da dette potensielt utgjør svært mye data så har man i kartet kun med arter som også inngår i kartlaget for verdsatte arter. For en full liste over alle konvensjonsarter, så henstilles til at en ser på artstabellene for Arter av nasjonal forvaltningsinteresse.\n\n13. Konvensjonsarter - områder\nKartlaget viser områdeforekomster for arter som inngår i internasjonale konvensjoner vedtatt av Norge, synliggjøres her. Dette er aktuelt for Bern-, Bonn- og OSPAR-konvensjonen. Merk, da dette potensielt utgjør svært mye data så har man i kartet kun med arter som også inngår i kartlaget for verdsatte arter. For en full liste over alle konvensjonsarter, så henstilles til at en ser på artstabellene for Arter av nasjonal forvaltningsinteresse.\n\n14. Fremmede arter - punkt\nKartlaget viser punktforekomster for fremmede arter i risikokategoriene 'Høy' og 'Svært høy' risiko.\n\n15. Fremmede arter - områder\nKartlaget viser områdeforekomster for fremmede arter i risikokategoriene 'Høy' og 'Svært høy' risiko."
+  },
+  "scope": {
+    "level": "dataset",
+    "extent": {
+      "spatial": {
+        "spatialScope": "National"
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2015-02-16",
+            "2021-01-01"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "useLimitation": "Ingen begrensninger på bruk er oppgitt.",
+      "accessConstraints": "Åpne data",
+      "useConstraints": "Lisens",
+      "license": "Creative Commons BY 4.0 (CC BY 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "dataContent": {
+    "usage": "Datasettet gir verdifull informasjon til bruk bl.a. i den kommunale arealplanleggingen og annen planlegging av arealbruk. Samtidig gir datasettet føringer for hvilke arter som bør inngå i artskartlegging.\n\nDatasettet egner seg for fremstilling av temakart, interaktive kart, kartløsninger på internett og til\ngeografiske analyser."
+  },
+  "referenceSystems": {
+    "spatialReferenceSystems": [
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      }
+    ],
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    },
+    "qualityElements": [
+      {
+        "name": "COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services",
+        "measure": "Dataene er ikke iht produktspesifikasjonen"
+      },
+      {
+        "name": "SOSI-produktspesifikasjon: Arter av nasjonal forvaltningsinteresse",
+        "measure": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      },
+      {
+        "name": "Sosi applikasjonsskjema",
+        "measure": "SOSI-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "name": "Sosi applikasjonsskjema",
+        "measure": "GML-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "name": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measure": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "87"
+      },
+      {
+        "name": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 87%"
+      }
+    ],
+    "lineage": {
+      "statement": "Datasettet inneholder: \n\n1. Verdsatte arter - alle - punkt: \nKartlaget viser punktforekomster for arter som har en verdikategori 'Middels', 'Stor' eller 'Svært stor' verdi i henhold til Veileder M-1941 Konsekvensutredning av klima og miljø.\n\n2. Verdsatte arter - alle - områder\nKartlaget viser områderforekomster for arter som har en verdikategori 'Middels', 'Stor' eller 'Svært stor' verdi i henhold til Veileder M-1941 Konsekvensutredning av klima og miljø.\n\n3. Prioriterte arter - punkt\nKartlaget viser punktforekomster for arter som prioritert art etter egen forskrift.\n\n4. Prioriterte arter - områder - Naturbase\nKartlaget viser områdeforekomster for arter som prioritert art etter egen forskrift. Disse områdene er deretter begrenset til de som er levert og delt via Miljødirektoratets Naturbase.\n\n5. Prioriterte arter - områder - alle\nKartlaget viser områdeforekomster for arter som prioritert art etter egen forskrift.\n\n6. Fredete arter - punkt\nKartlaget viser punktforekomster for arter som fredet etter egen forskrift.\n\n7. Fredete arter - områder\nKartlaget viser områdeforekomster for arter som fredet etter egen forskrift.\n\n8. Truede arter - punkt\nKartlaget viser punktforekomster for arter som er truet i henhold til Rødlista for arter.\n\n9. Truede arter - områder\nKartlaget viser områderforekomster for arter som er truet i henhold til Rødlista for arter.\n\n10. Ansvarsarter - punkt\nKartlaget viser punktforekomster for arter som er ansvarsarter (>25% av europeisk bestand i Norge).\n\n11. Ansvarsarter - områder\nKartlaget viser områdeforekomster for arter som er ansvarsarter (>25% av europeisk bestand i Norge).\n\n12. Konvensjonsarter - punkt\nKartlaget viser puntforekomster for arter som inngår i internasjonale konvensjoner vedtatt av Norge, synliggjøres her. Dette er aktuelt for Bern-, Bonn- og OSPAR-konvensjonen. Merk, da dette potensielt utgjør svært mye data så har man i kartet kun med arter som også inngår i kartlaget for verdsatte arter. For en full liste over alle konvensjonsarter, så henstilles til at en ser på artstabellene for Arter av nasjonal forvaltningsinteresse.\n\n13. Konvensjonsarter - områder\nKartlaget viser områdeforekomster for arter som inngår i internasjonale konvensjoner vedtatt av Norge, synliggjøres her. Dette er aktuelt for Bern-, Bonn- og OSPAR-konvensjonen. Merk, da dette potensielt utgjør svært mye data så har man i kartet kun med arter som også inngår i kartlaget for verdsatte arter. For en full liste over alle konvensjonsarter, så henstilles til at en ser på artstabellene for Arter av nasjonal forvaltningsinteresse.\n\n14. Fremmede arter - punkt\nKartlaget viser punktforekomster for fremmede arter i risikokategoriene 'Høy' og 'Svært høy' risiko.\n\n15. Fremmede arter - områder\nKartlaget viser områdeforekomster for fremmede arter i risikokategoriene 'Høy' og 'Svært høy' risiko."
+    }
+  },
+  "maintenance": {
+    "maintenanceFrequency": "Daglig",
+    "maintenanceNote": "Datasettet gir verdifull informasjon til bruk bl.a. i den kommunale arealplanleggingen og annen planlegging av arealbruk. Samtidig gir datasettet føringer for hvilke arter som bør inngå i artskartlegging.\n\nDatasettet egner seg for fremstilling av temakart, interaktive kart, kartløsninger på internett og til\ngeografiske analyser.",
+    "status": "Kontinuerlig oppdatert"
+  },
+  "portrayal": {
+    "legendDescriptionUrl": "https://register.geonorge.no/register/versjoner/tegneregler/miljodirektoratet/arter-av-nasjonal-forvaltningsinteresse"
+  },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "GEONORGE:DOWNLOAD"
+        },
+        "access": {
+          "href": "https://geoapi.p.aks.miljodirektoratet.no/geonorge/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Geonorge nedlastning",
+        "format": {
+          "format": "Geonorge nedlastning"
+        },
+        "access": {
+          "href": "https://geoapi.p.aks.miljodirektoratet.no/geonorge/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Arter av nasjonal forvaltningsinteresse 3 WMS",
+        "format": {
+          "format": "PNG"
+        },
+        "access": {
+          "href": "https://arcgis002.miljodirektoratet.no/arcgis/services/artnasjonal3/MapServer/WMSServer",
+          "protocol": "WMS-tjeneste",
+          "license": "Åpne data"
+        },
+        "notes": "Tjeneste"
+      }
+    ]
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2026-02-01",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Miljødirektoratet",
+      "email": "wms@miljodir.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "a8456aed-441a-40c4-831f-46bcbe4e6ff1"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=a8456aed-441a-40c4-831f-46bcbe4e6ff1"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=a8456aed-441a-40c4-831f-46bcbe4e6ff1",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "https://geoapi.p.aks.miljodirektoratet.no/geonorge/capabilities/",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
+    },
+    {
+      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://arcgis002.miljodirektoratet.no/arcgis/services/artnasjonal3/MapServer/WMSServer",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Tjeneste"
+    },
+    {
+      "href": "https://arcgis002.miljodirektoratet.no/arcgis/services/artnasjonal3/MapServer/WMSServer",
+      "rel": "service",
+      "type": "application/xml",
+      "title": "Tjeneste-distribusjon"
+    }
+  ]
+}
