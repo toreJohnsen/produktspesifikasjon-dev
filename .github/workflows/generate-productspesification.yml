@@ -113,7 +113,7 @@ jobs:
           PY
 
       - id: prepare
-        uses: arkitektum/ps.editor.actions@main
+        uses: arkitektum/ps.editor.actions@scopes
         with:
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
