@@ -1,7 +1,7 @@
 metadataId: 779a554b-fc3e-48a6-b202-561b07e9d4c2
 output_directory: produktspesifikasjon
-product_slug: planleggingigangsatttest
-updated: 2026-01-28
+product_slug: planleggingigangsatttest2
+updated: 2026-02-04
 scopes: 
   - name: datafangst
     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Kommunal- og moderniseringsdepartementet/Arealplan/Arealplan 5.0/PlanleggingIgangsatt.xml
