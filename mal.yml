@@ -1,13 +1,10 @@
-metadataId: 779a554b-fc3e-48a6-b202-561b07e9d4c2
+metadataId: 7f854c3d-4c65-4581-ab94-087a76564ee2
 output_directory: produktspesifikasjon
-product_slug: test4
-updated: 2026-02-04
+product_slug: vernskog
+updated: 2026-02-05
 scopes: 
-  - name: datafangst
-    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Kommunal- og moderniseringsdepartementet/Arealplan/Arealplan 5.0/PlanleggingIgangsatt.xml
+  - name: datamodell
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Landbruksdirektoratet/Vernskog_20260101.xml
     generator: xmi
-    description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
-  - name: innsynstjeneste
-    url: https://plandata.ft.dibk.no/services/planleggingigangsatt/collections
-    generator: ogc_feature_api
-    description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+    description: Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, samt sårbar skog og skog som kan bli ødelagt ved feil behandling.
+    
