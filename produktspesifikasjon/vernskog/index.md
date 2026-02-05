@@ -54,7 +54,9 @@ Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, sam
 
 ## Spesifikasjonsomfang
 
-**Nivå**: dataset
+**Nivå**:
+#### datamodell
+Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, samt sårbar skog og skog som kan bli ødelagt ved feil behandling.
 
 **Utstrekning**:
 
@@ -75,6 +77,20 @@ Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, sam
 - **Lisens**: Norsk lisens for offentlige data (NLOD)
 - **Lisenslenke**: <http://data.norge.no/nlod/no/1.0>
 - **Sikkerhetsbegrensninger**: Ugradert
+
+## Innhold og struktur
+
+
+
+### Datamodell - datamodell
+
+
+
+[Objektkatalog - datamodell](datamodell/objektkatalog.html)
+
+
+
+<a href="datamodell/datamodell_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell/datamodell_feature_catalogue.png" alt="Datamodell datamodell" style="max-width: 100%; height: auto;" /></a>
 
 ## Referansesystem
 
