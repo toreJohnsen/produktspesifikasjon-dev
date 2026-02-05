@@ -1,0 +1,222 @@
+{
+  "identificationSection": {
+    "id": "7f854c3d-4c65-4581-ab94-087a76564ee2",
+    "title": "Vernskog",
+    "abstract": "I henhold til Skogbruksloven § 12, anses skog som vernskog når den tjener til vern for annen skog eller gir vern mot naturskader. Det samme gjelder områder opp mot fjellet, mot nord eller ut mot havet der skogen er sårbar og kan bli ødelagt ved feil skogbehandling.\n\nDet er Statsforvalterens landbruksavdeling som har ansvar for forskrift og kartlegging av vernskoggrensene. Vernskog er samlet inn og er tilgjengelig for de områdene hvor data er sendt inn digitalt av Statsforvalterens landbruksavdelingen. Landbruksdirektoratet er nasjonal koordinator og fagmyndighet.",
+    "purpose": "Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, samt sårbar skog og skog som kan bli ødelagt ved feil behandling.",
+    "language": "nor",
+    "keywords": [
+      "Skog",
+      "Klima",
+      "Naturskade",
+      "Åpne data",
+      "Norge digitalt",
+      "fellesDatakatalog",
+      "ØkologiskGrunnkart",
+      "Landbruk",
+      "Vernskog"
+    ],
+    "topicCategories": [
+      "Landbruk og havbruk"
+    ],
+    "dates": {
+      "creation": "2014-11-13",
+      "publication": "2014-11-13",
+      "revision": "2014-11-13",
+      "metadata": "2025-05-16"
+    },
+    "responsibleParties": [
+      {
+        "name": "Baro Moslet",
+        "organization": "Landbruksdirektoratet",
+        "email": "gisdrift@nibio.no",
+        "role": "owner"
+      },
+      {
+        "name": "Christina Sogge",
+        "organization": "Landbruksdirektoratet",
+        "email": "gisdrift@nibio.no",
+        "role": "pointOfContact"
+      },
+      {
+        "name": "Ingvild Nystuen",
+        "organization": "Norsk institutt for bioøkonomi",
+        "email": "gisdrift@nibio.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/981544315_Landbruksdirektoratet_liten.png",
+    "supplementalInformation": "Arealplanlegging og skogbruk. Vernskog er ikke fredet, men hogst i vernskog skal følgje retningslinjer gitt av fylkeslandbruksstyret. Retningslinjene kan inneholde regler om meldeplikt.\nURL til hjelp: https://www.landbruksdirektoratet.no/nb/skogbruk/vernskog-og-naturfare"
+  },
+  "scope": {
+    "level": "dataset",
+    "extent": {
+      "spatial": {
+        "bbox": [
+          2.0,
+          57.0,
+          33.0,
+          72.0
+        ],
+        "boundingBox": {
+          "west": 2.0,
+          "south": 57.0,
+          "east": 33.0,
+          "north": 72.0,
+          "crs": "EPSG:4258"
+        }
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2014-11-13",
+            "2014-11-13"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "accessConstraints": "Åpne data",
+      "useConstraints": "Lisens",
+      "license": "Norsk lisens for offentlige data (NLOD)",
+      "licenseUrl": "http://data.norge.no/nlod/no/1.0",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "referenceSystems": {
+    "spatialReferenceSystems": [
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      }
+    ],
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    },
+    "qualityElements": [
+      {
+        "name": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measure": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "70"
+      },
+      {
+        "name": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 70%"
+      }
+    ],
+    "lineage": {
+      "statement": "Arealplanlegging og skogbruk. Vernskog er ikke fredet, men hogst i vernskog skal følgje retningslinjer gitt av fylkeslandbruksstyret. Retningslinjene kan inneholde regler om meldeplikt.\nURL til hjelp: https://www.landbruksdirektoratet.no/nb/skogbruk/vernskog-og-naturfare"
+    }
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Ikke planlagt",
+    "maintenanceAndUpdateStatement": "Må oppdateres"
+  },
+  "portrayal": {
+    "legendDescriptionUrl": "https://register.geonorge.no/register/versjoner/tegneregler/norsk-institutt-for-biookonomi/vernskog"
+  },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "GEONORGE:DOWNLOAD"
+        },
+        "access": {
+          "href": "https://kart8.nibio.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Geonorge nedlastning",
+        "format": {
+          "format": "Geonorge nedlastning"
+        },
+        "access": {
+          "href": "https://kart8.nibio.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Vernskog - WMS",
+        "format": {
+          "format": "png"
+        },
+        "access": {
+          "href": "https://wms.nibio.no/cgi-bin/vernskog2?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+          "protocol": "WMS-tjeneste",
+          "license": "Åpne data"
+        },
+        "notes": "Tjeneste"
+      }
+    ]
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2025-05-16",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Landbruksdirektoratet",
+      "email": "gisdrift@nibio.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "7f854c3d-4c65-4581-ab94-087a76564ee2"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=7f854c3d-4c65-4581-ab94-087a76564ee2"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=7f854c3d-4c65-4581-ab94-087a76564ee2",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "https://nibio.no/tema/jord/arealressurser/andre-kart/vernskog?",
+      "rel": "about",
+      "type": "text/html",
+      "title": "Produktside"
+    },
+    {
+      "href": "https://kart8.nibio.no/api/capabilities/",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
+    },
+    {
+      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://wms.nibio.no/cgi-bin/vernskog2",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Tjeneste"
+    },
+    {
+      "href": "https://wms.nibio.no/cgi-bin/vernskog2?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+      "rel": "service",
+      "type": "application/xml",
+      "title": "Tjeneste-distribusjon"
+    }
+  ]
+}
