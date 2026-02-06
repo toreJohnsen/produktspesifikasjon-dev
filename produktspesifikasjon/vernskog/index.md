@@ -55,7 +55,7 @@ Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, sam
 ## Spesifikasjonsomfang
 
 **Nivå**:
-#### datamodell
+#### Filnedlastning
 Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, samt sårbar skog og skog som kan bli ødelagt ved feil behandling.
 
 **Utstrekning**:
@@ -82,15 +82,15 @@ Vise skog som tjener til vern for annen skog eller gir vern mot naturskader, sam
 
 
 
-### Datamodell - datamodell
+### Datamodell - Filnedlastning
 
 
 
-[Objektkatalog - datamodell](datamodell/objektkatalog.html)
+[Objektkatalog - Filnedlastning](filnedlastning/objektkatalog.html)
 
 
 
-<a href="datamodell/datamodell_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell/datamodell_feature_catalogue.png" alt="Datamodell datamodell" style="max-width: 100%; height: auto;" /></a>
+<a href="filnedlastning/filnedlastning_feature_catalogue.png" title="Klikk for stor visning"><img src="filnedlastning/filnedlastning_feature_catalogue.png" alt="Datamodell Filnedlastning" style="max-width: 100%; height: auto;" /></a>
 
 ## Referansesystem
 

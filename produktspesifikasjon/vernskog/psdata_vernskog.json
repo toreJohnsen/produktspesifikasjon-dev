@@ -49,7 +49,7 @@
     "supplementalInformation": "Arealplanlegging og skogbruk. Vernskog er ikke fredet, men hogst i vernskog skal følgje retningslinjer gitt av fylkeslandbruksstyret. Retningslinjene kan inneholde regler om meldeplikt.\nURL til hjelp: https://www.landbruksdirektoratet.no/nb/skogbruk/vernskog-og-naturfare"
   },
   "scope": {
-    "level": "#### datamodell\nVise skog som tjener til vern for annen skog eller gir vern mot naturskader, samt sårbar skog og skog som kan bli ødelagt ved feil behandling.",
+    "level": "#### Filnedlastning\nVise skog som tjener til vern for annen skog eller gir vern mot naturskader, samt sårbar skog og skog som kan bli ødelagt ved feil behandling.",
     "extent": {
       "spatial": {
         "bbox": [
