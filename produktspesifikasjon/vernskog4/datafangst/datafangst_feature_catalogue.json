@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Vernskog",
+    "description": "Skog som tjener til vern for annen skog eller gir vern mot naturskader.",
+    "attributes": [
+      {
+        "name": "vernskogtype",
+        "type": "Vernskogtype",
+        "description": "Beskrivelse av hvor en finner de ulike typene vernskog. Vernskog mot fjellet, kysten eller mot naturskader.",
+        "cardinality": "1",
+        "valueDomain": {
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/landskap/vernskog/vernskogtype"
+        }
+      },
+      {
+        "name": "vernskogsone",
+        "type": "Vernskogsone",
+        "description": "En inndeling innad i vernskog som i forskriften gir føringer for skogbehandlingen.",
+        "cardinality": "0..1",
+        "valueDomain": {
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/landskap/vernskog/vernskogsone"
+        }
+      },
+      {
+        "name": "fylkesnummer",
+        "type": "Fylkesnummer",
+        "description": "nummerering av fylker",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "nummerering av fylker <font color=\"#333333\"> </font>\n<font color=\"#333333\">\n</font><font color=\"#333333\">Merknad: Inneholder fremtidige, gyldige og utgåtte nummer. Fylket skal alltid ha 2 sifre, dvs. eventuelt med ledende null.</font>",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/fylkesnummer"
+        }
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "DateTime",
+        "description": "tidspunkt for siste endring på objektet\n\nMerknad:\nOppdateringsdato kan være forskjellig fra datafangsdato ved at data som er registrert kan bufres en kortere eller lengre periode før disse legges inn i datasystemet (databasen).",
+        "cardinality": "1"
+      },
+      {
+        "name": "opphav",
+        "type": "CharacterString",
+        "description": "referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde\n\nMerknad:\nKan også beskrive navn på person og årsak til oppdatering",
+        "cardinality": "1"
+      },
+      {
+        "name": "merknad",
+        "type": "CharacterString",
+        "description": "Kommentar til opphav som ikke dekkes av egenskapen opphav. F.eks. om det er brukt andre kartgrunnlag.",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "forvaltningsmyndighet",
+        "type": "CharacterString",
+        "description": "Navn på ansvarlig forvaltningsmyndighet for vernskoggrensene.",
+        "cardinality": "1"
+      },
+      {
+        "name": "forskrift",
+        "type": "CharacterString",
+        "description": "Link til lovdata med forskriften for fylket.",
+        "cardinality": "1"
+      },
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et objekt",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator av et objekt\n\nMerknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.",
+            "cardinality": "1"
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI\n\nEksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0\n\nMerknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no",
+            "cardinality": "1"
+          }
+        ]
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [],
+      "associations": [
+        {
+          "target": "Vernskoggrense",
+          "role": "acgrensesAvVernskoggrense",
+          "cardinality": "0..*"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Vernskoggrense",
+    "description": "Avgrensning av Vernskogen.",
+    "attributes": [
+      {
+        "name": "vernskogtype",
+        "type": "Vernskogtype",
+        "description": "Beskrivelse av hvor en finner de ulike typene vernskog. Vernskog mot fjellet, kysten eller mot naturskader.",
+        "cardinality": "1",
+        "valueDomain": {
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/landskap/vernskog/vernskogtype"
+        }
+      },
+      {
+        "name": "høyde",
+        "type": "Integer",
+        "description": "Vernskogrensen når den følger høydekurve",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "følgerTerrengdetalj",
+        "type": "TerrengdetaljKode",
+        "description": "Opplysning om at grense følger naturlige skillelinjer i terrenget",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "Kodeliste for terrengdetaljer som en grense kan følge",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/landskap/vernskog/terrengdetaljkode"
+        }
+      },
+      {
+        "name": "fylkesnummer",
+        "type": "Fylkesnummer",
+        "description": "nummerering av fylker",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "nummerering av fylker <font color=\"#333333\"> </font>\n<font color=\"#333333\">\n</font><font color=\"#333333\">Merknad: Inneholder fremtidige, gyldige og utgåtte nummer. Fylket skal alltid ha 2 sifre, dvs. eventuelt med ledende null.</font>",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/fylkesnummer"
+        }
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "DateTime",
+        "description": "tidspunkt for siste endring på objektet\n\nMerknad:\nOppdateringsdato kan være forskjellig fra datafangsdato ved at data som er registrert kan bufres en kortere eller lengre periode før disse legges inn i datasystemet (databasen).",
+        "cardinality": "1"
+      },
+      {
+        "name": "år",
+        "type": "Integer",
+        "description": "Angir år for når vernskoggrensen er opprettet (ny) eller sist revidert (videreføring).",
+        "cardinality": "1"
+      },
+      {
+        "name": "opphav",
+        "type": "CharacterString",
+        "description": "referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde\n\nMerknad:\nKan også beskrive navn på person og årsak til oppdatering",
+        "cardinality": "1"
+      },
+      {
+        "name": "merknad",
+        "type": "CharacterString",
+        "description": "Kommentar til opphav som ikke dekkes av egenskapen opphav. F.eks. om det er brukt andre kartgrunnlag.",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et objekt",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator av et objekt\n\nMerknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.",
+            "cardinality": "1"
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI\n\nEksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0\n\nMerknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no",
+            "cardinality": "1"
+          }
+        ]
+      },
+      {
+        "name": "kvalitet",
+        "type": "Posisjonskvalitet",
+        "description": "beskrivelse av kvaliteten på stedfestingen\n\nMerknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "målemetode",
+            "type": "Målemetode",
+            "description": "Tillatte verdier fra kodelisten målemetode. Kode 63 benyttes der høydekoter er brukt.",
+            "cardinality": "1",
+            "valueDomain": {
+              "definition": "metode som ligger til grunn for registrering av posisjon",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/landskap/vernskog/m%c3%a5lemetodevernskog"
+            }
+          },
+          {
+            "name": "nøyaktighet",
+            "type": "Integer",
+            "description": "Høydekurver etter N5 har en nøyaktighet på 2 meter.  N50=4",
+            "cardinality": "1"
+          }
+        ]
+      },
+      {
+        "name": "forvaltningsmyndighet",
+        "type": "CharacterString",
+        "description": "Navn på ansvarlig forvaltningsmyndighet for vernskoggrensene.",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [],
+      "associations": []
+    }
+  }
+]
