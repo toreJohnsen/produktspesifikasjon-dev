@@ -1,0 +1,66 @@
+@startuml
+title Vernskog - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class Vernskog <<featureType>> {
+    + vernskogtype [1] : Vernskogtype
+    + vernskogsone [0..1] : Vernskogsone
+    + fylkesnummer [1] : Fylkesnummer
+    + oppdateringsdato [1] : Date
+    + opphav [1] : CharacterString
+    + merknad [0..1] : CharacterString
+    + forvaltningsmyndighet [1] : CharacterString
+    + forskrift [1] : CharacterString
+    + identifikasjon [1] : Identifikasjon
+  }
+
+  class Vernskoggrense <<featureType>> {
+    + vernskogtype [1] : Vernskogtype
+    + høyde [0..1] : Integer
+    + følgerTerrengdetalj [1] : TerrengdetaljKode
+    + fylkesnummer [1] : Fylkesnummer
+    + oppdateringsdato [1] : Date
+    + år [1] : Integer
+    + opphav [1] : CharacterString
+    + merknad [0..1] : CharacterString
+    + identifikasjon [1] : Identifikasjon
+    + kvalitet [1] : Posisjonskvalitet
+    + forvaltningsmyndighet [1] : CharacterString
+  }
+
+  class Identifikasjon {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+  }
+
+  class Posisjonskvalitet {
+    + målemetode [1] : Målemetode
+    + nøyaktighet [1] : Integer
+  }
+}
+
+  Vernskog --> Vernskoggrense : acgrensesAvVernskoggrense [0..*]
+
+@enduml
