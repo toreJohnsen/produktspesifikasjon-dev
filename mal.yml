@@ -7,5 +7,5 @@ scopes:
     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Landbruksdirektoratet/Vernskog_20260101.xml
     generator: xmi
     description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
-include_only_features:
-  - Konsesjon
+    include_only_features:
+      - Konsesjon
