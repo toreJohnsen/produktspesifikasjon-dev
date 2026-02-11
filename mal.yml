@@ -4,7 +4,7 @@ product_slug: vernskog3
 updated: 2026-02-10
 xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Landbruksdirektoratet/Vernskog_20260101.xml
 include_only_features:
-  - Vernskog
+  - asdf
 #scopes: 
 #  - name: datafangst
 #    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Landbruksdirektoratet/Vernskog_20260101.xml
