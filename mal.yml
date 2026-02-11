@@ -1,10 +1,9 @@
 metadataId: 11a70876-5b21-4cc6-8229-902266c4968f
 output_directory: produktspesifikasjon
-product_slug: N1002
+product_slug: N1003
 updated: 2026-02-11
 xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N100Kartdata20230401.xml
-include_only_features:
-  - Elv
+
 #scopes: 
 #  - name: datafangst
 #    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Landbruksdirektoratet/Vernskog_20260101.xml
