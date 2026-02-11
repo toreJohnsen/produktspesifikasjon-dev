@@ -1,0 +1,759 @@
+@startuml
+title N100 Kartdata - Alpinbakke - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  abstract class SOSI_Objekt_Hjelpelinjer <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class FiktivDelelinje <<featureType>> {
+    + oppdateringsdato [0..1] : Date
+    + grense [1] : GM_Curve
+  }
+
+  abstract class SOSI_Objekt_Linjer_Samferdsel <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class KantUtsnitt <<featureType>> {
+    + oppdateringsdato [0..1] : Date
+    + grense [1] : GM_Curve
+  }
+
+  class Dataavgrensning <<featureType>> {
+    + oppdateringsdato [0..1] : Date
+    + grense [1] : GM_Curve
+  }
+
+  abstract class SOSI_Objekt_Flater <<featureType>> {
+    ' Ingen attributter
+  }
+
+  abstract class SOSI_Objekt_PunkterOgLinjer <<featureType>> {
+    ' Ingen attributter
+  }
+
+  abstract class SOSI_Objekt_Sperrelinjer <<featureType>> {
+    ' Ingen attributter
+  }
+
+  abstract class SOSI_Objekt_Kombinasjon_Ulike_Geometrityper <<featureType>> {
+    ' Ingen attributter
+  }
+
+  abstract class "SOSI_Objekt_PunkterOgLinjer_Høyde" as SOSI_Objekt_PunkterOgLinjer_H_yde <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class Grunnlinjepunkt <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+    + grunnlinjepunktnavn [0..1] : CharacterString
+    + grunnlinjepunktnummer [1] : CharacterString
+  }
+
+  class AvtaltAvgrensningslinje <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Territorialgrense <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Kommunegrense <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Teiggrensepunkt <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+    + grensepunkttype [1] : Grensepunkttype
+    + grensepunktnummer [0..1] : CharacterString
+  }
+
+  class Kommune <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+    + kommunenavn [1] : CharacterString
+    + kommunenummer [1] : Kommunenummer
+    + fylkesnummer [1] : CharacterString
+    + fylkesnavn [1] : CharacterString
+  }
+
+  class Riksgrense <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Fylkesgrense <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Grunnlinje <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class "Innsjøkant" as Innsj_kant <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class "Industriområde" as Industriomr_de <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class Lufthavn <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+    + område [0..1] : GM_Surface
+    + posisjon [0..1] : GM_Point
+    + lufthavntype [0..1] : Lufthavntype
+    + trafikktype [0..1] : Trafikktype
+    + iataKode [0..1] : IATAKode
+    + icaoKode [0..1] : ICAOKode
+    + lufthavneier [0..1] : CharacterString
+    + navn [0..1] : CharacterString
+  }
+
+  class ElvelinjeFiktiv <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class "HavInnsjøSperre" as HavInnsj_Sperre <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + grense [1] : GM_Curve
+  }
+
+  class Myr <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class ElvBekk <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+    + vannbredde [1] : VannBredde
+  }
+
+  class "InnsjøElvSperre" as Innsj_ElvSperre <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + grense [1] : GM_Curve
+  }
+
+  class Steintipp <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class ElveKant <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class "Innsjø" as Innsj_ <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+    + høyde [0..1] : Integer
+  }
+
+  class Alpinbakke <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class Rullebane <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class Foss <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+    + retning [1] : Retning
+  }
+
+  class Tettbebyggelse <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class BymessigBebyggelse <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class "SnøIsbre" as Sn_Isbre <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class Havflate <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class "InnsjøkantRegulert" as Innsj_kantRegulert <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Skog <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class "InnsjøRegulert" as Innsj_Regulert <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+    + lavesteRegulerteVannstand [0..1] : Integer
+    + høyde [0..1] : Integer
+  }
+
+  class DyrketMark <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class Golfbane <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class Elv <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class "InnsjøInnsjøSperre" as Innsj_Innsj_Sperre <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class "ÅpentOmråde" as _pentOmr_de <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class HavElvSperre <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + grense [1] : GM_Curve
+  }
+
+  class Steinbrudd <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+  }
+
+  class Kystkontur <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Arealbrukgrense <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Molo <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class Dam <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class "Tårn" as T_rn <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class Takkant <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Taubane <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class Gruve <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class Bygning <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+    + posisjon [0..1] : GM_Point
+    + område [0..1] : GM_Surface
+    + bygningstype [1] : BygningstypeKode
+    + hytteinformasjon [0..1] : Hytteinformasjon
+    + navn [0..1] : CharacterString
+  }
+
+  class Tank <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [0..1] : GM_Point
+  }
+
+  class SpesiellDetalj <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [0..1] : GM_Point
+    + senterlinje [0..1] : GM_Curve
+  }
+
+  class Reingjerde <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class Navigasjonsinstallasjon <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class LuftledningLH <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class MastTele <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class "Parkeringsområde" as Parkeringsomr_de <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class KaiBrygge <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+  }
+
+  class Vindkraftverk <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class Campingplass <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+  }
+
+  class TrigonometriskPunkt <<featureType>> {
+    + medium [1] : MediumHøyde
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+    + høyde [1] : Integer
+  }
+
+  class Forsenkningskurve <<featureType>> {
+    + medium [1] : MediumHøyde
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+    + høyde [1] : Integer
+  }
+
+  class Hjelpekurve <<featureType>> {
+    + medium [1] : MediumHøyde
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+    + høyde [1] : Integer
+  }
+
+  class Terrengpunkt <<featureType>> {
+    + medium [1] : MediumHøyde
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+    + høyde [1] : Integer
+  }
+
+  class "Høydekurve" as H_ydekurve <<featureType>> {
+    + medium [1] : MediumHøyde
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+    + høyde [1] : Integer
+  }
+
+  class Skytefeltgrense <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class "Naturvernområde" as Naturvernomr_de <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+    + vernedato [1] : Date
+    + verneform [1] : Verneform
+    + navn [1] : CharacterString
+  }
+
+  class Naturverngrense <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + grense [1] : GM_Curve
+  }
+
+  class Skytefelt <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + område [1] : GM_Surface
+    + navn [1] : CharacterString
+    + status [1] : Skytefeltstatus
+  }
+
+  class Bane <<featureType>> {
+    + medium [0..1] : MediumSamferdsel
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+    + sporantall [1] : Sporantall
+    + jernbaneinformasjon [1] : Jernbaneinformasjon
+  }
+
+  class Veglenke <<featureType>> {
+    + medium [0..1] : MediumSamferdsel
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + senterlinje [1] : GM_Curve
+    + typeVeg [1] : TypeVeg
+    + vegsystem [0..1] : Vegsystem
+    + motorvegtype [0..1] : Motorvegtype
+    + rutemerking [0..1] : RuteMerking
+    + vedlikeholdsansvarlig [0..1] : Vedlikeholdsansvarlig
+  }
+
+  class Stasjon <<featureType>> {
+    + oppdateringsdato [1] : Date
+    + kvalitet [1] : Posisjonskvalitet
+    + posisjon [1] : GM_Point
+    + retning [1] : Retning
+    + navn [1] : CharacterString
+  }
+
+  abstract class FellesTekst <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class StedsnavnTekst <<featureType>> {
+    + geometri [1] : GM_Curve
+    + streng [1] : CharacterString
+    + oppdateringsdato [0..1] : Date
+    + tekstformatering [1] : Tekstformatering
+    + fulltekst [1] : CharacterString
+    + navneobjekthovedgruppe [1] : Navneobjekthovedgruppe
+    + navneobjektgruppe [1] : Navneobjektgruppe
+    + navneobjekttype [1] : Navneobjekttype
+    + språk [0..1] : SpråkKode
+    + stedsnavnnummer [0..1] : Integer
+    + språkprioritering [0..1] : SpråkprioriteringKode
+    + stedsnummer [0..1] : Integer
+    + skrivemåtenummer [0..1] : Integer
+  }
+
+  class PresentasjonTekst <<featureType>> {
+    + geometri [1] : GM_Curve
+    + streng [1] : CharacterString
+    + oppdateringsdato [0..1] : Date
+    + tekstformatering [1] : Tekstformatering
+    + fulltekst [1] : CharacterString
+    + teksttype [1] : Teksttype
+  }
+
+  class Posisjonskvalitet {
+    + målemetode [1] : Målemetode
+    + nøyaktighet [1] : Nøyaktighet
+  }
+
+  class Retning {
+    + retningsverdi [1] : Real
+    + retningsenhet [1] : Retningsenhet
+    + retningsreferanse [1] : Retningsreferanse
+  }
+
+  class Hytteinformasjon {
+    + betjeningsgrad [0..1] : Betjeningsgrad
+    + hytteeier [0..1] : Hytteeier
+    + tilgjengelighet [0..1] : Tilgjengelighet
+  }
+
+  class Jernbaneinformasjon {
+    + anleggstype [0..1] : Jernbanetype
+    + banestatus [0..1] : Jernbanestatus
+  }
+
+  class Vegsystem {
+    + vegkategori [0..1] : Vegkategori
+    + vegfase [0..1] : Vegfase
+    + vegnummer [0..1] : Integer
+  }
+
+  class Tekstformatering {
+    + tekstReferansepunkt [0..1] : TekstReferansePunkt
+    + tegnavstand [0..1] : Integer
+    + skriftkode [0..1] : Skriftkode
+    + skrifttype [0..1] : CharacterString
+    + referansemålestokk [0..1] : Integer
+  }
+
+  class TekstReferansePunkt {
+    + tekstReferansePunktNord [1] : TekstReferansePunktNord
+    + tekstReferansePunktØst [1] : TekstReferansePunktØst
+  }
+}
+
+  SOSI_Objekt_Hjelpelinjer <|-- FiktivDelelinje
+  SOSI_Objekt_Hjelpelinjer <|-- KantUtsnitt
+  SOSI_Objekt_Hjelpelinjer <|-- Dataavgrensning
+  SOSI_Objekt_Flater --> KantUtsnitt : avgrensesAvKantUtsnitt [0..*]
+  SOSI_Objekt_Kombinasjon_Ulike_Geometrityper --> KantUtsnitt : avgrensesAvKantUtsnitt [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Grunnlinjepunkt
+  SOSI_Objekt_PunkterOgLinjer <|-- AvtaltAvgrensningslinje
+  SOSI_Objekt_PunkterOgLinjer <|-- Territorialgrense
+  SOSI_Objekt_PunkterOgLinjer <|-- Kommunegrense
+  SOSI_Objekt_PunkterOgLinjer <|-- Teiggrensepunkt
+  SOSI_Objekt_Flater <|-- Kommune
+  Kommune --> AvtaltAvgrensningslinje : avgrensesAvAvtaltAvgrensningslinje [0..*]
+  Kommune --> Territorialgrense : avgrensesAvTerritorialgrense [0..*]
+  Kommune --> Kommunegrense : avgrensesAvKommunegrense [0..*]
+  Kommune --> Riksgrense : avgrensesAvRiksgrense [0..*]
+  Kommune --> Fylkesgrense : avgrensesAvFylkesgrense [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Riksgrense
+  SOSI_Objekt_PunkterOgLinjer <|-- Fylkesgrense
+  SOSI_Objekt_PunkterOgLinjer <|-- Grunnlinje
+  SOSI_Objekt_PunkterOgLinjer <|-- Innsj_kant
+  SOSI_Objekt_Flater <|-- Industriomr_de
+  Industriomr_de --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Industriomr_de --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Industriomr_de --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Industriomr_de --> Kystkontur : avgrensesAvKystkontur [0..*]
+  Industriomr_de --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  Industriomr_de --> ElveKant : avgrensesAvElveKant [0..*]
+  Industriomr_de --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  SOSI_Objekt_Kombinasjon_Ulike_Geometrityper <|-- Lufthavn
+  Lufthavn --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Lufthavn --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Lufthavn --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Lufthavn --> Kystkontur : avgrensesAvKystkontur [0..*]
+  Lufthavn --> ElveKant : avgrensesAvElveKant [0..*]
+  Lufthavn --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  Lufthavn --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- ElvelinjeFiktiv
+  SOSI_Objekt_Sperrelinjer <|-- HavInnsj_Sperre
+  SOSI_Objekt_Flater <|-- Myr
+  Myr --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Myr --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Myr --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Myr --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  Myr --> Kystkontur : avgrensesAvKystkontur [0..*]
+  Myr --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  Myr --> ElveKant : avgrensesAvElveKant [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- ElvBekk
+  SOSI_Objekt_Sperrelinjer <|-- Innsj_ElvSperre
+  SOSI_Objekt_Flater <|-- Steintipp
+  Steintipp --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Steintipp --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Steintipp --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Steintipp --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  Steintipp --> ElveKant : avgrensesAvElveKant [0..*]
+  Steintipp --> Kystkontur : avgrensesAvKystkontur [0..*]
+  Steintipp --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- ElveKant
+  SOSI_Objekt_Flater <|-- Innsj_
+  Innsj_ --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Innsj_ --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Innsj_ --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Innsj_ --> HavInnsj_Sperre : avgrensesAvHavInnsjøSperre [0..*]
+  Innsj_ --> Innsj_ElvSperre : avgrensesAvInnsjøElvSperre [0..*]
+  Innsj_ --> Innsj_Innsj_Sperre : avgrensesAvInnsjøInnsjøSperre [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Alpinbakke
+  SOSI_Objekt_PunkterOgLinjer <|-- Rullebane
+  SOSI_Objekt_PunkterOgLinjer <|-- Foss
+  SOSI_Objekt_Flater <|-- Tettbebyggelse
+  Tettbebyggelse --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Tettbebyggelse --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Tettbebyggelse --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Tettbebyggelse --> ElveKant : avgrensesAvElveKant [0..*]
+  Tettbebyggelse --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  Tettbebyggelse --> Kystkontur : avgrensesAvKystkontur [0..*]
+  Tettbebyggelse --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  SOSI_Objekt_Flater <|-- BymessigBebyggelse
+  BymessigBebyggelse --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  BymessigBebyggelse --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  BymessigBebyggelse --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  BymessigBebyggelse --> ElveKant : avgrensesAvElveKant [0..*]
+  BymessigBebyggelse --> Kystkontur : avgrensesAvKystkontur [0..*]
+  BymessigBebyggelse --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  BymessigBebyggelse --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  SOSI_Objekt_Flater <|-- Sn_Isbre
+  Sn_Isbre --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Sn_Isbre --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Sn_Isbre --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Sn_Isbre --> ElveKant : avgrensesAvElveKant [0..*]
+  Sn_Isbre --> Kystkontur : avgrensesAvKystkontur [0..*]
+  Sn_Isbre --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  Sn_Isbre --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  SOSI_Objekt_Flater <|-- Havflate
+  Havflate --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Havflate --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Havflate --> HavInnsj_Sperre : avgrensesAvHavInnsjøSperre [0..*]
+  Havflate --> Kystkontur : avgrensesAvKystkontur [0..*]
+  Havflate --> HavElvSperre : avgrensesAvHavElvSperre [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Innsj_kantRegulert
+  SOSI_Objekt_Flater <|-- Skog
+  Skog --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Skog --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Skog --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Skog --> ElveKant : avgrensesAvElveKant [0..*]
+  Skog --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  Skog --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  Skog --> Kystkontur : avgrensesAvKystkontur [0..*]
+  SOSI_Objekt_Flater <|-- Innsj_Regulert
+  Innsj_Regulert --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Innsj_Regulert --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Innsj_Regulert --> Innsj_ElvSperre : avgrensesAvInnsjøElvSperre [0..*]
+  Innsj_Regulert --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  Innsj_Regulert --> Innsj_Innsj_Sperre : avgrensesAvInnsjøInnsjøSperre [0..*]
+  SOSI_Objekt_Flater <|-- DyrketMark
+  DyrketMark --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  DyrketMark --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  DyrketMark --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  DyrketMark --> ElveKant : avgrensesAvElveKant [0..*]
+  DyrketMark --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  DyrketMark --> Kystkontur : avgrensesAvKystkontur [0..*]
+  DyrketMark --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Golfbane
+  SOSI_Objekt_Flater <|-- Elv
+  Elv --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Elv --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Elv --> Innsj_ElvSperre : avgrensesAvInnsjøElvSperre [0..*]
+  Elv --> ElveKant : avgrensesAvElveKant [0..*]
+  Elv --> HavElvSperre : avgrensesAvHavElvSperre [0..*]
+  SOSI_Objekt_Flater <|-- _pentOmr_de
+  _pentOmr_de --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  _pentOmr_de --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  _pentOmr_de --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  _pentOmr_de --> ElveKant : avgrensesAvElveKant [0..*]
+  _pentOmr_de --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  _pentOmr_de --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  _pentOmr_de --> Kystkontur : avgrensesAvKystkontur [0..*]
+  SOSI_Objekt_Sperrelinjer <|-- HavElvSperre
+  SOSI_Objekt_Flater <|-- Steinbrudd
+  Steinbrudd --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+  Steinbrudd --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+  Steinbrudd --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+  Steinbrudd --> ElveKant : avgrensesAvElveKant [0..*]
+  Steinbrudd --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+  Steinbrudd --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+  Steinbrudd --> Kystkontur : avgrensesAvKystkontur [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Kystkontur
+  SOSI_Objekt_PunkterOgLinjer <|-- Arealbrukgrense
+  SOSI_Objekt_PunkterOgLinjer <|-- Molo
+  SOSI_Objekt_PunkterOgLinjer <|-- Dam
+  SOSI_Objekt_PunkterOgLinjer <|-- T_rn
+  SOSI_Objekt_PunkterOgLinjer <|-- Takkant
+  SOSI_Objekt_PunkterOgLinjer <|-- Taubane
+  SOSI_Objekt_PunkterOgLinjer <|-- Gruve
+  SOSI_Objekt_Kombinasjon_Ulike_Geometrityper <|-- Bygning
+  Bygning --> Takkant : avgrensesAvTakkant [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Tank
+  SOSI_Objekt_PunkterOgLinjer <|-- SpesiellDetalj
+  SOSI_Objekt_PunkterOgLinjer <|-- Reingjerde
+  SOSI_Objekt_PunkterOgLinjer <|-- Navigasjonsinstallasjon
+  SOSI_Objekt_PunkterOgLinjer <|-- LuftledningLH
+  SOSI_Objekt_PunkterOgLinjer <|-- MastTele
+  SOSI_Objekt_PunkterOgLinjer <|-- Parkeringsomr_de
+  SOSI_Objekt_PunkterOgLinjer <|-- KaiBrygge
+  SOSI_Objekt_PunkterOgLinjer <|-- Vindkraftverk
+  SOSI_Objekt_PunkterOgLinjer <|-- Campingplass
+  SOSI_Objekt_PunkterOgLinjer_H_yde <|-- TrigonometriskPunkt
+  SOSI_Objekt_PunkterOgLinjer_H_yde <|-- Forsenkningskurve
+  SOSI_Objekt_PunkterOgLinjer_H_yde <|-- Hjelpekurve
+  SOSI_Objekt_PunkterOgLinjer_H_yde <|-- Terrengpunkt
+  SOSI_Objekt_PunkterOgLinjer_H_yde <|-- H_ydekurve
+  SOSI_Objekt_PunkterOgLinjer <|-- Skytefeltgrense
+  SOSI_Objekt_Flater <|-- Naturvernomr_de
+  Naturvernomr_de --> Naturverngrense : avgrensesAvNaturverngrense [0..*]
+  SOSI_Objekt_PunkterOgLinjer <|-- Naturverngrense
+  SOSI_Objekt_Flater <|-- Skytefelt
+  Skytefelt --> Skytefeltgrense : avgrensesAvSkytefeltgrense [0..*]
+  SOSI_Objekt_Linjer_Samferdsel <|-- Bane
+  SOSI_Objekt_Linjer_Samferdsel <|-- Veglenke
+  SOSI_Objekt_PunkterOgLinjer <|-- Stasjon
+  FellesTekst <|-- StedsnavnTekst
+  FellesTekst <|-- PresentasjonTekst
+
+@enduml

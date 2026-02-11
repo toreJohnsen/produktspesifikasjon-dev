@@ -1,0 +1,236 @@
+{
+  "identificationSection": {
+    "id": "11a70876-5b21-4cc6-8229-902266c4968f",
+    "title": "N100 Kartdata",
+    "abstract": "N100 Kartdata er kartografisk tilpasset målestokk 1:100 000.\nDatasettet dekker fastlands-Norge begrenset av riksgrensen mot nabolandene og territorialgrensen i havet.",
+    "language": "nor",
+    "keywords": [
+      "Kartdata",
+      "Landsdekkende",
+      "N100",
+      "Turkart",
+      "N100 Kartdata",
+      "Norge fastland",
+      "Norge digitalt",
+      "fellesDatakatalog",
+      "Basis geodata"
+    ],
+    "topicCategories": [
+      "Basisdata"
+    ],
+    "dates": {
+      "creation": "2020-03-02",
+      "publication": "2020-03-02",
+      "revision": "2026-02-07",
+      "metadata": "2026-02-11"
+    },
+    "responsibleParties": [
+      {
+        "organization": "Kartverket",
+        "email": "kundesenter@kartverket.no",
+        "role": "owner"
+      },
+      {
+        "organization": "Kartverket",
+        "email": "kundesenter@kartverket.no",
+        "role": "pointOfContact"
+      },
+      {
+        "organization": "Kartverket",
+        "email": "kundesenter@kartverket.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png",
+    "supplementalInformation": "Trenger du hjelp til å laste ned og ta i bruk Kartverkets data og tjenester? På kartverket.no finner du tips og veiledning"
+  },
+  "scope": {
+    "level": "#### Alpinbakke\nbla bla bla",
+    "extent": {
+      "temporal": {
+        "interval": [
+          [
+            "2020-03-02",
+            "2026-02-07"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "useLimitation": "Ingen begrensninger på bruk er oppgitt.",
+      "accessConstraints": "Åpne data",
+      "useConstraints": "Lisens",
+      "license": "Creative Commons BY 4.0 (CC BY 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "dataContent": {
+    "usage": "Dataene egner seg blant annet for fremstilling av topografiske kart, temakart, turkart/fritidskart, \ninteraktive kart, som datagrunnlag for kartløsninger på internett og i analysesammenheng."
+  },
+  "referenceSystems": {
+    "spatialReferenceSystems": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ],
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    },
+    "qualityElements": [
+      {
+        "name": "SOSI produktspesifikasjon: N100 Kartdata",
+        "measure": "Dataene er i henhold til produktspesifikasjonen"
+      }
+    ],
+    "lineage": {
+      "statement": "Trenger du hjelp til å laste ned og ta i bruk Kartverkets data og tjenester? På kartverket.no finner du tips og veiledning"
+    }
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Hvert kvartal",
+    "maintenanceNote": "Dataene egner seg blant annet for fremstilling av topografiske kart, temakart, turkart/fritidskart, \ninteraktive kart, som datagrunnlag for kartløsninger på internett og i analysesammenheng.",
+    "maintenanceAndUpdateStatement": "Kontinuerlig oppdatert",
+    "dataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Ingen prosesshistorie tilgjengelig"
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "legendDescriptionUrl": "https://register.geonorge.no/tegneregler/spesifikasjon-for-skjermkartografi"
+  },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "GEONORGE:DOWNLOAD"
+        },
+        "access": {
+          "href": "https://nedlasting.geonorge.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Geonorge nedlastning",
+        "format": {
+          "format": "Geonorge nedlastning"
+        },
+        "access": {
+          "href": "https://nedlasting.geonorge.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Topografisk Norgeskart WMS",
+        "format": {
+          "format": "png"
+        },
+        "access": {
+          "href": "https://wms.geonorge.no/skwms1/wms.topo?service=wms&request=getcapabilities",
+          "protocol": "WMS-tjeneste",
+          "license": "Åpne data"
+        },
+        "notes": "Tjeneste"
+      },
+      {
+        "title": "Kartdata WMS",
+        "format": {
+          "format": "OGC WMS"
+        },
+        "access": {
+          "href": "https://wms.geonorge.no/skwms1/wms.kartdata?service=wms&request=getcapabilities",
+          "protocol": "WMS-tjeneste",
+          "license": "Åpne data"
+        },
+        "notes": "Tjeneste"
+      },
+      {
+        "title": "Topografisk norgeskart WMTS / cache",
+        "format": {
+          "format": "OGC WMTS"
+        },
+        "access": {
+          "href": "https://cache.kartverket.no/v1/wmts/1.0.0/WMTSCapabilities.xml",
+          "protocol": "WMTS-tjeneste",
+          "license": "Åpne data"
+        },
+        "notes": "Tjeneste"
+      }
+    ]
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2026-02-11",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Kartverket",
+      "email": "kundesenter@kartverket.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "11a70876-5b21-4cc6-8229-902266c4968f"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=11a70876-5b21-4cc6-8229-902266c4968f"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=11a70876-5b21-4cc6-8229-902266c4968f",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "https://nedlasting.geonorge.no/api/capabilities/",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
+    },
+    {
+      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://wms.geonorge.no/skwms1/wms.topo",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Tjeneste"
+    },
+    {
+      "href": "https://wms.geonorge.no/skwms1/wms.topo?service=wms&request=getcapabilities",
+      "rel": "service",
+      "type": "application/xml",
+      "title": "Tjeneste-distribusjon"
+    },
+    {
+      "href": "https://wms.geonorge.no/skwms1/wms.kartdata?service=wms&request=getcapabilities",
+      "rel": "alternate",
+      "type": "WMS-tjeneste",
+      "title": "Kartdata WMS"
+    },
+    {
+      "href": "https://cache.kartverket.no/v1/wmts/1.0.0/WMTSCapabilities.xml",
+      "rel": "alternate",
+      "type": "WMTS-tjeneste",
+      "title": "Topografisk norgeskart WMTS / cache"
+    }
+  ]
+}
