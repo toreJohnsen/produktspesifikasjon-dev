@@ -1,10 +1,16 @@
 metadataId: 11a70876-5b21-4cc6-8229-902266c4968f
 output_directory: produktspesifikasjon
-product_slug: N1004
+product_slug: N1005
 updated: 2026-02-11
-xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N100Kartdata-20230401_Utkast.xml
-include_only_features:
-  - Alpinbakke
+scopes: 
+  - name: Alpinbakke
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N100Kartdata-20230401_Utkast.xml
+    generator: xmi
+    description: bla bla bla
+    include_only_features:
+      - Alpinbakke
+
+
 #scopes: 
 #  - name: datafangst
 #    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Landbruksdirektoratet/Vernskog_20260101.xml
@@ -12,3 +18,5 @@ include_only_features:
 #    description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
 #    include_only_features:
 #      - Vernskog
+
+#xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N100Kartdata-20230401_Utkast.xml
