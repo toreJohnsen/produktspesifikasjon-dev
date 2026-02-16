@@ -21,8 +21,8 @@
     "dates": {
       "creation": "2020-03-02",
       "publication": "2020-03-02",
-      "revision": "2026-02-07",
-      "metadata": "2026-02-11"
+      "revision": "2026-02-14",
+      "metadata": "2026-02-16"
     },
     "responsibleParties": [
       {
@@ -51,7 +51,7 @@
         "interval": [
           [
             "2020-03-02",
-            "2026-02-07"
+            "2026-02-14"
           ]
         ]
       }
@@ -180,7 +180,7 @@
   "metadata": {
     "standard": "ISO19115",
     "standardVersion": "2003",
-    "metadataDate": "2026-02-11",
+    "metadataDate": "2026-02-16",
     "language": "nor",
     "pointOfContact": {
       "organization": "Kartverket",

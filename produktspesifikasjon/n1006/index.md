@@ -1,6 +1,6 @@
 ---
 title: "N100 Kartdata"
-updated: "2026-02-11"
+updated: "2026-02-19"
 organization: "Kartverket"
 logo: "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png"
 ---
@@ -24,7 +24,7 @@ N100 Kartdata
 
 ### Referansedato
 
-2026-02-07
+2026-02-14
 
 ### Ansvarlig organisasjon
 
@@ -53,7 +53,7 @@ Datasettet dekker fastlands-Norge begrenset av riksgrensen mot nabolandene og te
 
 **Utstrekning**:
 
-- **tidsmessig**: - **intervall**: - 2020-03-02, 2026-02-07
+- **tidsmessig**: - **intervall**: - 2020-03-02, 2026-02-14
 
 **Juridiske begrensninger**:
 
@@ -6557,7 +6557,7 @@ interaktive kart, som datagrunnlag for kartløsninger på internett og i analyse
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2026-02-11
+**Metadatadato**: 2026-02-16
 
 **språk**: nor
 
