@@ -1,10 +1,12 @@
-metadataId: 11a70876-5b21-4cc6-8229-902266c4968f
+metadataId: 28c28e3a-d88f-4a34-8c60-5efe6d56a44d
 output_directory: produktspesifikasjon
-product_slug: N1007
-updated: 2026-02-19
-xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N100Kartdata-20230401_Utkast.xml
-include_only_features:
-  - Alpinbakke
+product_slug: arealanalyse
+updated: 2026-02-16
+scopes: 
+  - name: filnedlastning
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/NasjonaltGrunnkartForArealanalyse-20260101.xml
+    generator: xmi
+    description: <beskrivelse>
 
 
 #scopes: 
