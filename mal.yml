@@ -1,21 +1,26 @@
-metadataId: a29b905c-6aaa-4283-ae2c-d167624c08a8
+metadataId: af2c4a0a-1978-4e62-b08d-ed1f36bd5023
 output_directory: produktspesifikasjon
-product_slug: skredfareomrader
+product_slug: trafikkmengde
 updated: 2026-03-03
-xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Norges%20vassdrags-%20og%20energidirektorat/Skredfareomr%C3%A5der_1.2.xml
-
-
-#scopes: 
-#  - name: Alpinbakke
-#    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N100Kartdata-20230401_Utkast.xml
-#    generator: xmi
-#    description: bla bla bla
-#scopes: 
-#  - name: datafangst
-#    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Landbruksdirektoratet/Vernskog_20260101.xml
-#    generator: xmi
-#    description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
-#    include_only_features:
-#      - Vernskog
-
-#xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N100Kartdata-20230401_Utkast.xml
+xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens%20vegvesen/DOK/Trafikkmengde_20170702.xml
+# 
+#ogc_feature_api: https://kos-pygeoapi.atkv3-dev.kartverket.cloud/collections
+#include_only_features:
+#  - Uttak
+#
+# scopes: 
+#   - name: datafangst
+#     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Kommunal- og moderniseringsdepartementet/Arealplan/Arealplan 5.0/PlanleggingIgangsatt.xml
+#     generator: xmi
+#     description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+#   - name: innsynstjeneste
+#     url: https://plandata.ft.dibk.no/services/planleggingigangsatt/collections
+#     generator: ogc_feature_api
+#     description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+#   - name: bergrettigheter
+#     url: https://dirmin.no/kart/server/wfs3/
+#     generator: ogc_feature_api  
+#     description: Tjeneste for innsyn i bergrettigheter.
+#     include_only_features:
+#       - Undersoekelsesrett
+#       - Utvinningsrett
