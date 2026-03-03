@@ -1,0 +1,221 @@
+{
+  "identificationSection": {
+    "id": "af2c4a0a-1978-4e62-b08d-ed1f36bd5023",
+    "title": "Trafikkmengde",
+    "abstract": "Datasettet gir informasjon om representativ trafikkmengde for en vegstrekning på europa-, riks- eller fylkesveger. Trafikkmengden er beregnet gjennom trafikkdatasystemet, men kan også unntaksvis være subjektivt anslått. Det utgis som et årsdatasett og er sentralt i forvaltning av vegene. Vegnett som har oppstått etter årets ÅDT-beregninger vil kunne mangle data frem til neste års ÅDT-beregning. Datagrunnlaget for ÅDT-beregninger er data fra individuelle målepunkt på vegnettet (trafikkregistreringsstasjoner), disse finnes på http://trafikkdata.no",
+    "purpose": "Gir informasjon om representativ trafikkmengde for en trafikkstrekning. Kan brukes som grunnlag for ulike analyser der trafikkdata er relevant.",
+    "language": "nor",
+    "keywords": [
+      "Trafikkmengde",
+      "Trafikkdata",
+      "Veginformasjon",
+      "ÅDT",
+      "samferdsel",
+      "Norge fastland",
+      "geodataloven",
+      "Det offentlige kartgrunnlaget",
+      "Norge digitalt",
+      "fellesDatakatalog"
+    ],
+    "topicCategories": [
+      "Transport"
+    ],
+    "dates": {
+      "creation": "2016-02-03",
+      "publication": "2016-02-03",
+      "revision": "2026-01-01",
+      "metadata": "2026-03-03"
+    },
+    "responsibleParties": [
+      {
+        "name": "Jan Kristian Jensen",
+        "organization": "Statens vegvesen",
+        "email": "jan.kristian.jensen@vegvesen.no",
+        "role": "owner"
+      },
+      {
+        "name": "Espen Sveen",
+        "organization": "Statens vegvesen",
+        "email": "espen.sveen@vegvesen.no",
+        "role": "pointOfContact"
+      },
+      {
+        "name": "Jan Kristian Jensen",
+        "organization": "Statens vegvesen",
+        "email": "jan.kristian.jensen@vegvesen.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/971032081_Statensvegvesen_liten.png",
+    "supplementalInformation": "Nasjonal vegdatabank (NVDB) tilbyr samkjøring av data fra mange kilder. Samkjøringen tillater at veg- og trafikkdata kan presenteres på kartbakgrunn og analyseres sammen med data fra andre etater. Statens vegvesen er kjent med at kvaliteten på data som tilbys gjennom samkjøringen kan være varierende. Det arbeides kontinuerlig med kvalitetsforbedring og oppdatering av datagrunnlaget. Statens vegvesen kan derfor ikke garantere at datagrunnlaget til enhver tid er riktig og således heller ikke på ta seg ansvar for resultater som skyldes feil i datagrunnlaget. \n\nStatens vegvesen har ikke noe ansvar for nøyaktighet, pålitelighet, eller fullstendighet for informasjon og kart tilgjengeliggjort. Statens vegvesen har heller ikke noe ansvar for følgeskader som skyldes bruk av informasjonen eller tekniske avbrudd i tjenesten."
+  },
+  "scope": {
+    "level": "dataset",
+    "extent": {
+      "spatial": {
+        "spatialScope": "National",
+        "bbox": [
+          2.0,
+          57.0,
+          33.0,
+          72.0
+        ],
+        "boundingBox": {
+          "west": 2.0,
+          "south": 57.0,
+          "east": 33.0,
+          "north": 72.0,
+          "crs": "EPSG:25832"
+        }
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2016-02-03",
+            "2026-01-01"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "useLimitation": "Ingen begrensninger på bruk er oppgitt.",
+      "accessConstraints": "Åpne data",
+      "useConstraints": "Lisens",
+      "license": "Norsk lisens for offentlige data (NLOD)",
+      "licenseUrl": "http://data.norge.no/nlod/no/1.0",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "dataContent": {
+    "usage": "Trafikkanalyser, planlegging av veger og andre trafikksikkerhetstiltak, trafikkstøy m.m."
+  },
+  "referenceSystems": {
+    "spatialReferenceSystems": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ],
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    },
+    "qualityElements": [
+      {
+        "name": "SOSI-produktspesifikasjon: Trafikkmengde",
+        "measure": "Dataene er i henhold til produktspesifikasjonen"
+      },
+      {
+        "name": "Sosi applikasjonsskjema",
+        "measure": "SOSI-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "name": "Sosi applikasjonsskjema",
+        "measure": "GML-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "name": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measure": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "91"
+      },
+      {
+        "name": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 91%"
+      }
+    ],
+    "lineage": {
+      "statement": "Nasjonal vegdatabank (NVDB) tilbyr samkjøring av data fra mange kilder. Samkjøringen tillater at veg- og trafikkdata kan presenteres på kartbakgrunn og analyseres sammen med data fra andre etater. Statens vegvesen er kjent med at kvaliteten på data som tilbys gjennom samkjøringen kan være varierende. Det arbeides kontinuerlig med kvalitetsforbedring og oppdatering av datagrunnlaget. Statens vegvesen kan derfor ikke garantere at datagrunnlaget til enhver tid er riktig og således heller ikke på ta seg ansvar for resultater som skyldes feil i datagrunnlaget. \n\nStatens vegvesen har ikke noe ansvar for nøyaktighet, pålitelighet, eller fullstendighet for informasjon og kart tilgjengeliggjort. Statens vegvesen har heller ikke noe ansvar for følgeskader som skyldes bruk av informasjonen eller tekniske avbrudd i tjenesten."
+    }
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Årlig",
+    "maintenanceNote": "Trafikkanalyser, planlegging av veger og andre trafikksikkerhetstiltak, trafikkstøy m.m.",
+    "maintenanceAndUpdateStatement": "Fullført"
+  },
+  "portrayal": {
+    "legendDescriptionUrl": "https://register.geonorge.no/register/versjoner/tegneregler/statens-vegvesen/trafikkmengde"
+  },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "GEONORGE:DOWNLOAD"
+        },
+        "access": {
+          "href": "https://nedlasting.geonorge.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Geonorge nedlastning",
+        "format": {
+          "format": "Geonorge nedlastning"
+        },
+        "access": {
+          "href": "https://nedlasting.geonorge.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2026-03-03",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Statens vegvesen",
+      "email": "espen.sveen@vegvesen.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "af2c4a0a-1978-4e62-b08d-ed1f36bd5023"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=af2c4a0a-1978-4e62-b08d-ed1f36bd5023"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=af2c4a0a-1978-4e62-b08d-ed1f36bd5023",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "ftp://vegvesen.hostedftp.com/~StatensVegvesen/DOK/Trafikkmengde/",
+      "rel": "about",
+      "type": "text/html",
+      "title": "Produktside"
+    },
+    {
+      "href": "https://nedlasting.geonorge.no/api/capabilities/",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
+    }
+  ]
+}
