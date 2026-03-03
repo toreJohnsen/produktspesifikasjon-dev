@@ -1,0 +1,251 @@
+{
+  "identificationSection": {
+    "id": "a29b905c-6aaa-4283-ae2c-d167624c08a8",
+    "title": "Kvikkleire",
+    "abstract": "Kartene gir en oversikt over soner med potensiell fare (aktsomhetsområder) for større kvikkleireskred. Sonene er identifisert og avgrenset ved kvartærgeologisk kartlegging (for å identifisere områder med marin leire), geoteknisk vurdering av topografi og grove, geotekniske undersøkelser.  Sonene omfatter løsneområder for kvikkleireskred (områder som kan gli ut) og utløpsområder (områder som kan rammes av skredmasser) for nye kartlegginger. For identifiserte soner som kun inneholder løsneområder, må utløpsområdene vurderes særskilt.\\\\nDe identifiserte kvikkleiresonene er klassifisert i tre faregradsklasser (høy-, middels- og lav faregrad), basert på topografiske, geotekniske og hydrologiske kriterier. Sonene er videre klassifisert i tre konsekvensklasser(høy-, middels- og lav konsekvensklasse) avhengig av konsekvenser som et skred i sonen vil ha på bebyggelse og infrastruktur. Sonene er deretter klassifisert i fem risikoklasser, utledet fra faregrads- og konsekvensklassifiseringen.",
+    "language": "nor",
+    "keywords": [
+      "geologi, nasjonal skreddatabase, skrednett, database, ras, hazard, clay, quickclay, leire, kvikkleire, sosi, shape, gdb, faresone, risiko, faregrad, NGI, landsdekkende, data, datasett, Norges geologiske undersøkelse",
+      "NGU",
+      "NVE",
+      "skred",
+      "geologi",
+      "Norge",
+      "Områder med naturbetingede farer",
+      "beredskapsbase",
+      "Inspire",
+      "Det offentlige kartgrunnlaget",
+      "Norge digitalt",
+      "geodataloven",
+      "modellbaserteVegprosjekter",
+      "fellesDatakatalog",
+      "Samfunnssikkerhet",
+      "Kartleggingsområde",
+      "UtlopOmr",
+      "UtlosningOmr",
+      "SkredFaresone",
+      "KvikkleireFaresone",
+      "kartleggingStatus",
+      "skredFaregradKlasse",
+      "skredRisikoKvikkleireKlasse",
+      "skredKvalKartlegging",
+      "skredSkadeKonsekvensKlasse"
+    ],
+    "topicCategories": [
+      "Geovitenskapelig informasjon"
+    ],
+    "dates": {
+      "creation": "2002-12-15",
+      "publication": "2002-12-15",
+      "revision": "2026-03-02",
+      "metadata": "2026-03-03"
+    },
+    "responsibleParties": [
+      {
+        "name": "Eli K. Øydvin",
+        "organization": "Norges vassdrags- og energidirektorat",
+        "email": "eko@nve.no",
+        "role": "owner"
+      },
+      {
+        "name": "Yngve Antonsen",
+        "organization": "Norges vassdrags- og energidirektorat",
+        "email": "yaa@nve.no",
+        "role": "pointOfContact"
+      },
+      {
+        "name": "Ivar Peereboom",
+        "organization": "Norges vassdrags- og energidirektorat",
+        "email": "iope@nve.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/970205039_NVE_liten.png",
+    "supplementalInformation": "Datasettet for kvikkleire består av to flatetema, oversiktstemaet Kartblad og detaljtemaet KvikkleireFaresone. Kartblad viser dekningsgrad for kvikkleirekartleggingen inndelt i M711-kartblad (kartleggingen er gjort kartbladvis). KvikkleireFaresone inneholder selve faresonene. Faresonene er kartlagt i målestokk 1:50.000, detaljnivået på datasettet tilsier bruk innenfor kartmålestokken: 1:10.000 - 1:100.000. Kartlegging av nye områder skjer etter NVEs \"Plan for skredfarekartlegging\" (NVE Rapport nr. 14/2011). I tillegg til egne kartleggingsprosjekter, publiserer NVE resultatet av kartlegginger som er utført av eksterne konsulenter. NVE har etablert en egen innmeldingsløsning for datamottak fra eksterne."
+  },
+  "scope": {
+    "level": "dataset",
+    "extent": {
+      "spatial": {
+        "spatialScope": "National"
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2002-12-15",
+            "2026-03-02"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "useLimitation": "Ingen begrensninger på bruk er oppgitt.",
+      "accessConstraints": "Åpne data",
+      "useConstraints": "Lisens",
+      "license": "Norsk lisens for offentlige data (NLOD)",
+      "licenseUrl": "http://data.norge.no/nlod/no/1.0",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "dataContent": {
+    "usage": "Datasettet er primært ment som grunnlag for å vurdere kvikkleireskredfare på kommuneplannivå. Datasettet/kartene er også ment som grunnlag for informasjon til kommuner, grunneiere, entreprenører og andre, med tanke på å unngå terrenginngrep og andre aktiviteter som kan utløse skred. Sonene viser områder der en må vise særlig aktsomhet mot større kvikkleireskred ved arealplanlegging, utbygging og terrenginngrep. De kartlagte sonene viser bare kvikkleiresoner med potensiell fare for større skred (terreng med høydeforskjell på 15 m og mer). Det kan også finnes skredfarlige kvikkleiresoner utenfor de identifiserte sonene. I alle områder med marine leiravsetninger må det derfor utvises en generell aktsomhet mot mulige kvikkleireskred. I NVEs retningslinjer ”Flaum og skredfare i arealplanar” med tilhørende veileder ”Vurdering av områdestabilitet ved utbygging på kvikkleire og andre jordarter med sprøbruddegenskaper”, og i veilederen til byggteknisk forskrift, er dette beskrevet nærmere.Se også NVEs hjemmesider for mer info om hvordan man skal ta hensyn til flom- og skredfare i arealplaner: https://www.nve.no/flaum-og-skred/arealplanlegging/vassdragsmiljo-i-arealplanlegging/?ref=mainmenu"
+  },
+  "referenceSystems": {
+    "spatialReferenceSystems": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ],
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    },
+    "qualityElements": [
+      {
+        "name": "COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services",
+        "measure": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      },
+      {
+        "name": "SOSI produktspesifikasjon: Kvikkleire",
+        "measure": "Dataene er i henhold til produktspesifikasjonen"
+      },
+      {
+        "name": "Sosi applikasjonsskjema",
+        "measure": "SOSI-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "name": "Sosi applikasjonsskjema",
+        "measure": "GML-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "name": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measure": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "97"
+      },
+      {
+        "name": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 97%"
+      }
+    ],
+    "lineage": {
+      "statement": "Datasettet for kvikkleire består av to flatetema, oversiktstemaet Kartblad og detaljtemaet KvikkleireFaresone. Kartblad viser dekningsgrad for kvikkleirekartleggingen inndelt i M711-kartblad (kartleggingen er gjort kartbladvis). KvikkleireFaresone inneholder selve faresonene. Faresonene er kartlagt i målestokk 1:50.000, detaljnivået på datasettet tilsier bruk innenfor kartmålestokken: 1:10.000 - 1:100.000. Kartlegging av nye områder skjer etter NVEs \"Plan for skredfarekartlegging\" (NVE Rapport nr. 14/2011). I tillegg til egne kartleggingsprosjekter, publiserer NVE resultatet av kartlegginger som er utført av eksterne konsulenter. NVE har etablert en egen innmeldingsløsning for datamottak fra eksterne."
+    }
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Kontinuerlig",
+    "maintenanceNote": "Datasettet er primært ment som grunnlag for å vurdere kvikkleireskredfare på kommuneplannivå. Datasettet/kartene er også ment som grunnlag for informasjon til kommuner, grunneiere, entreprenører og andre, med tanke på å unngå terrenginngrep og andre aktiviteter som kan utløse skred. Sonene viser områder der en må vise særlig aktsomhet mot større kvikkleireskred ved arealplanlegging, utbygging og terrenginngrep. De kartlagte sonene viser bare kvikkleiresoner med potensiell fare for større skred (terreng med høydeforskjell på 15 m og mer). Det kan også finnes skredfarlige kvikkleiresoner utenfor de identifiserte sonene. I alle områder med marine leiravsetninger må det derfor utvises en generell aktsomhet mot mulige kvikkleireskred. I NVEs retningslinjer ”Flaum og skredfare i arealplanar” med tilhørende veileder ”Vurdering av områdestabilitet ved utbygging på kvikkleire og andre jordarter med sprøbruddegenskaper”, og i veilederen til byggteknisk forskrift, er dette beskrevet nærmere.Se også NVEs hjemmesider for mer info om hvordan man skal ta hensyn til flom- og skredfare i arealplaner: https://www.nve.no/flaum-og-skred/arealplanlegging/vassdragsmiljo-i-arealplanlegging/?ref=mainmenu",
+    "maintenanceAndUpdateStatement": "Kontinuerlig oppdatert",
+    "dataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Datasettet for kvikkleire består av to flatetema, oversiktstemaet Kartblad og detaljtemaet KvikkleireFaresone. Kartblad viser dekningsgrad for kvikkleirekartleggingen inndelt i M711-kartblad (kartleggingen er gjort kartbladvis). KvikkleireFaresone inneholder selve faresonene. Faresonene er kartlagt i målestokk 1:50 000, detaljnivået på datasettet tilsier bruk innenfor kartmålestokken: 1:10.000 - 1:100.000. Områder med marin leire er kartlagt av NGU, som grunnlag for identifisering av kvikkleiresoner. Norges Geotekniske institutt (NGI) har identifisert, avgrenset og klassifisert kvikkleiresonene etter en metode utviklet av NGI (beskrevet i: Vurdering av risiko for skred. Metode for klassifisering av faresoner, kvikkleire. NGI-rapport 20001008 – 2, rev. 3, datert 18. okt. 2008). Alle sonene er befart, og det er normalt foretatt minst en grunnboring i hver sone. I soner der NGI har hatt tilgang til flere grunnundersøkelser er også data fra disse benyttet. Konsekvensvurderinger er utført på grunnlag av tolkning av kart og opplysninger fra kommunen. Temakoder og egenskaper følger i hovedsak gjeldende SOSI-standard."
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "legendDescriptionUrl": "https://register.geonorge.no/register/versjoner/tegneregler/norges-vassdrags-og-energidirektorat/kvikkleire"
+  },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "GEONORGE:DOWNLOAD"
+        },
+        "access": {
+          "href": "https://nedlasting.geonorge.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Geonorge nedlastning",
+        "format": {
+          "format": "Geonorge nedlastning"
+        },
+        "access": {
+          "href": "https://nedlasting.geonorge.no/api/capabilities/",
+          "protocol": "GEONORGE:DOWNLOAD"
+        }
+      },
+      {
+        "title": "Kvikkleire WMS",
+        "format": {
+          "format": "wms"
+        },
+        "access": {
+          "href": "https://kart.nve.no/enterprise/services/SkredKvikkleire2/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+          "protocol": "WMS-tjeneste",
+          "license": "Åpne data"
+        },
+        "notes": "Tjeneste"
+      }
+    ]
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2026-03-03",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Norges vassdrags- og energidirektorat",
+      "email": "yaa@nve.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "a29b905c-6aaa-4283-ae2c-d167624c08a8"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=a29b905c-6aaa-4283-ae2c-d167624c08a8"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=a29b905c-6aaa-4283-ae2c-d167624c08a8",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "https://nedlasting.geonorge.no/api/capabilities/",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
+    },
+    {
+      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://kart.nve.no/enterprise/services/SkredKvikkleire2/MapServer/WMSServer",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Tjeneste"
+    },
+    {
+      "href": "https://kart.nve.no/enterprise/services/SkredKvikkleire2/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+      "rel": "service",
+      "type": "application/xml",
+      "title": "Tjeneste-distribusjon"
+    }
+  ]
+}
