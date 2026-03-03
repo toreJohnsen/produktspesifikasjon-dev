@@ -1,12 +1,8 @@
-metadataId: 28c28e3a-d88f-4a34-8c60-5efe6d56a44d
+metadataId: a29b905c-6aaa-4283-ae2c-d167624c08a8
 output_directory: produktspesifikasjon
-product_slug: arealanalyse
-updated: 2026-02-16
-scopes: 
-  - name: filnedlastning
-    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/NasjonaltGrunnkartForArealanalyse-20260101.xml
-    generator: xmi
-    description: <beskrivelse>
+product_slug: skredfareomrader
+updated: 2026-03-03
+xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N50Kartdata20230401.xml
 
 
 #scopes: 
