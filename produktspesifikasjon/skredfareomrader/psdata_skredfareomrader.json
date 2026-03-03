@@ -37,7 +37,7 @@
     "dates": {
       "creation": "2002-12-15",
       "publication": "2002-12-15",
-      "revision": "2026-03-02",
+      "revision": "2026-03-03",
       "metadata": "2026-03-03"
     },
     "responsibleParties": [
@@ -73,7 +73,7 @@
         "interval": [
           [
             "2002-12-15",
-            "2026-03-02"
+            "2026-03-03"
           ]
         ]
       }

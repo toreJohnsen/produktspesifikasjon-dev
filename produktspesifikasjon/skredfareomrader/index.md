@@ -24,7 +24,7 @@ Kvikkleire
 
 ### Referansedato
 
-2026-03-02
+2026-03-03
 
 ### Ansvarlig organisasjon
 
@@ -53,7 +53,7 @@ Kartene gir en oversikt over soner med potensiell fare (aktsomhetsområder) for 
 **Utstrekning**:
 
 - **romlig**: - **romlig omfang**: National
-- **tidsmessig**: - **intervall**: - 2002-12-15, 2026-03-02
+- **tidsmessig**: - **intervall**: - 2002-12-15, 2026-03-03
 
 **Juridiske begrensninger**:
 
