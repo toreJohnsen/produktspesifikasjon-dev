@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Trafikkmengde",
+    "description": "Gir informasjon om representativ trafikkmengde for en strekning",
+    "attributes": [
+      {
+        "name": "senterlinje",
+        "type": "Kurve",
+        "description": "Gir linje/kurve som geometrisk representerer objektet.",
+        "cardinality": "1"
+      },
+      {
+        "name": "ådtTotal",
+        "type": "Real",
+        "description": "Angir total årsdøgntrafikk.  Representativt for gitt strekning.  Gjennomsnittsverdi.",
+        "cardinality": "1"
+      },
+      {
+        "name": "ådtAndelLangeKjøretøy",
+        "type": "Real",
+        "description": "Angir hvor stor andel (i prosent) av kjøretøyene som er definert som lange.  Kjøretøy med lengde større eller lik 5,6 meter defineres som lange kjøretøy.",
+        "cardinality": "1"
+      },
+      {
+        "name": "årGjelderFor",
+        "type": "Real",
+        "description": "Angir hvilket år trafikkdataene gjelder for",
+        "cardinality": "1"
+      },
+      {
+        "name": "grunnlagForÅDT",
+        "type": "GrunnlagForÅDT",
+        "description": "Angir hva som er grunnlag for ÅDT-verdien",
+        "cardinality": "0..1",
+        "valueDomain": {
+          "listedValues": [
+            {
+              "value": "NorTraf",
+              "label": "NorTraf"
+            },
+            {
+              "value": "NorTraf Kommune",
+              "label": "Fra NorTraf Kommune"
+            },
+            {
+              "value": "Ferjedatabanken",
+              "label": "Ferjedatabanken"
+            },
+            {
+              "value": "Telling og skjønn",
+              "label": "Basert på telling og skjønn"
+            },
+            {
+              "value": "Skjønn",
+              "label": "Basert på skjønn"
+            },
+            {
+              "value": "Vegorama",
+              "label": "Vegorama"
+            }
+          ],
+          "definition": "Angir hva som er grunnlag for ÅDT-verdien",
+          "asDictionary": "false"
+        }
+      },
+      {
+        "name": "ådtStart",
+        "type": "Real",
+        "description": "Angir årsdøgntrafikk i start av gitt strekning.  Inkl tunge kjøretøy",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "ådtSlutt",
+        "type": "Real",
+        "description": "Angir årsdøgntrafikk i slutt av gitt strekning.  Inkl tunge kjøretøy",
+        "cardinality": "0..1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Veglenke"
+      ],
+      "associations": []
+    }
+  }
+]
