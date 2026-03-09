@@ -1,10 +1,10 @@
-metadataId: b2d5aaf8-79ac-40f3-9cd6-fdc30bc42ea1
+metadataId: 779a554b-fc3e-48a6-b202-561b07e9d4c2
 output_directory: produktspesifikasjon
-product_slug: skredfaresoner
-updated: 2026-03-06
-xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Norges%20vassdrags-%20og%20energidirektorat/Skredfareområder_1.2.xml
+product_slug: planleggingigangsatt3
+updated: 2026-03-09
+#xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Norges%20vassdrags-%20og%20energidirektorat/Skredfareområder_1.2.xml
 # 
-#ogc_feature_api: https://kos-pygeoapi.atkv3-dev.kartverket.cloud/collections
+ogc_feature_api: https://plandata.ft.dibk.no/services/rest/planleggingigangsatt/collections
 #include_only_features:
 #  - Uttak
 #
