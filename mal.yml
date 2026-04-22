@@ -1,26 +1,15 @@
-metadataId: https://kartkatalog.geonorge.no/metadata/stedsnavn/30caed2f-454e-44be-b5cc-26bb5c0110ca
+metadataId: 3165138f-1461-44fe-8b10-eac44e08a10a
 output_directory: produktspesifikasjon
-product_slug: stedsnavn
-updated: 2026-03-09
-#xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Norges%20vassdrags-%20og%20energidirektorat/Skredfareområder_1.2.xml
+product_slug: FKB-Bane_1
+updated: 2026-04-21
 # 
-ogc_feature_api: https://plandata.ft.dibk.no/services/rest/planleggingigangsatt/collections
+#ogc_feature_api: https://kos-pygeoapi.atkv3-dev.kartverket.cloud/collections
+#xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/Havnedata_testing.xml
 #include_only_features:
 #  - Uttak
 #
-# scopes: 
-#   - name: datafangst
-#     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Kommunal- og moderniseringsdepartementet/Arealplan/Arealplan 5.0/PlanleggingIgangsatt.xml
-#     generator: xmi
-#     description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
-#   - name: innsynstjeneste
-#     url: https://plandata.ft.dibk.no/services/planleggingigangsatt/collections
-#     generator: ogc_feature_api
-#     description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
-#   - name: bergrettigheter
-#     url: https://dirmin.no/kart/server/wfs3/
-#     generator: ogc_feature_api  
-#     description: Tjeneste for innsyn i bergrettigheter.
-#     include_only_features:
-#       - Undersoekelsesrett
-#       - Utvinningsrett
+scopes: 
+   - name: Datamodell for FKB-Bane
+     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/FKB/FKB-Bane-5.0.1.xml
+     generator: xmi
+     description: Viser full modell for FKB-Bane 5.0.1
