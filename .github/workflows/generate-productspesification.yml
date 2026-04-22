@@ -162,7 +162,7 @@ jobs:
           PY
 
       - id: prepare
-        uses: toreJohnsen/ps.editor.actions@main
+        uses: toreJohnsen/ps.editor.actions@puml-by-package
         with:
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
