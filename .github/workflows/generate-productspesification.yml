@@ -224,7 +224,7 @@ jobs:
           echo "path=$png" >> "$GITHUB_OUTPUT"
 
       - id: assemble
-        uses: toreJohnsen/ps.editor.actions/assemble@main
+        uses: toreJohnsen/ps.editor.actions/assemble@puml-by-package
         with:
           psdata-path: ${{ steps.prepare.outputs.psdata-path }}
           output-path: ${{ steps.prepare.outputs.spec-markdown }}
