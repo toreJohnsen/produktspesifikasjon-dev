@@ -1,6 +1,6 @@
-metadataId: 3165138f-1461-44fe-8b10-eac44e08a10a
+metadataId: ea192681-d039-42ec-b1bc-f3ce04c189ac
 output_directory: produktspesifikasjon
-product_slug: FKB-Bane_diagrams-test
+product_slug: N50_kartdata_diagrams-test
 updated: 2026-05-11
 # 
 #ogc_feature_api: https://kos-pygeoapi.atkv3-dev.kartverket.cloud/collections
@@ -9,7 +9,7 @@ updated: 2026-05-11
 #  - Uttak
 #
 scopes: 
-   - name: Datamodell for FKB-Bane
-     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/FKB/FKB-Bane-5.0.1.xml
+   - name: Datamodell for N50 kartdata
+     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N50Kartdata20230401.xml
      generator: xmi
-     description: Viser full modell for FKB-Bane 5.0.1
+     description: Viser full modell for N50 kartdata
