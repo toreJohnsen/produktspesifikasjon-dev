@@ -1,7 +1,7 @@
 metadataId: ea192681-d039-42ec-b1bc-f3ce04c189ac
 output_directory: produktspesifikasjon
-product_slug: N50_kartdata_diagrams-test
-updated: 2026-05-11
+product_slug: N50_kartdata_ea-diagrams-test
+updated: 2026-05-12
 # 
 #ogc_feature_api: https://kos-pygeoapi.atkv3-dev.kartverket.cloud/collections
 #xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/Havnedata_testing.xml
