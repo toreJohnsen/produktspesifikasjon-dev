@@ -1,0 +1,109 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title N50 Kartdata - Datamodell for N50 kartdata - Utvidelser i forhold til SOSI Del 1 og 2
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+class ElvMidtlinje <<featureType>> {
+  + senterlinje [1] : GM_Curve
+}
+
+class ElvelinjeFiktiv <<featureType>> {
+  + senterlinje [1] : GM_Curve
+}
+
+class "ÅpentOmråde" as _pentOmr_de <<featureType>> {
+  + område [1] : GM_Surface
+}
+
+class "InnsjøMidtlinje" as Innsj_Midtlinje <<featureType>> {
+  + senterlinje [1] : GM_Curve
+}
+
+class "InnsjøRegulert" as Innsj_Regulert <<featureType>> {
+  + område [0..1] : GM_Surface
+  + vatnLøpenummer [0..1] : Integer
+  + lavesteRegulerteVannstand [0..1] : Integer
+  + høyde [0..1] : Integer
+}
+
+class Skytefeltgrense <<featureType>> {
+  + grense [1] : GM_Curve
+}
+
+class PresentasjonTekst <<featureType>> {
+  + teksttype [1] : Teksttype
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class Arealbrukgrense <<Oversiktsdiagram Arealdekke - Arealbrukgrense>> {
+  }
+  class Dataavgrensning <<Hoveddiagram Generelle typer>> {
+  }
+  class ElveKant <<Hoveddiagram ElveKant>> {
+  }
+  class FellesTekst <<Hoveddiagram Stedsnavn>> {
+  }
+  class FiktivDelelinje <<Hoveddiagram Generelle typer>> {
+  }
+  class "InnsjøElvSperre" as Innsj_ElvSperre <<Hoveddiagram Vann>> {
+  }
+  class "InnsjøInnsjøSperre" as Innsj_Innsj_Sperre <<Hoveddiagram Vann>> {
+  }
+  class "Innsjøkant" as Innsj_kant <<Hoveddiagram Innsjøkant>> {
+  }
+  class "InnsjøkantRegulert" as Innsj_kantRegulert <<Hoveddiagram Vann>> {
+  }
+  class Kystkontur <<Hoveddiagram Kystkontur>> {
+  }
+  class SOSI_Objekt_Flater <<Hoveddiagram Generelle typer>> {
+  }
+  class SOSI_Objekt_PunkterOgLinjer <<Hoveddiagram Generelle typer>> {
+  }
+}
+
+SOSI_Objekt_PunkterOgLinjer <|-- ElvMidtlinje
+SOSI_Objekt_PunkterOgLinjer <|-- ElvelinjeFiktiv
+SOSI_Objekt_Flater <|-- _pentOmr_de
+_pentOmr_de --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+_pentOmr_de --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+_pentOmr_de --> ElveKant : avgrensesAvElveKant [0..*]
+_pentOmr_de --> Arealbrukgrense : avgrensesAvArealbrukgrense [0..*]
+_pentOmr_de --> Innsj_kant : avgrensesAvInnsjøkant [0..*]
+_pentOmr_de --> Innsj_kantRegulert : avgrensesAvInnsjøkantRegulert [0..*]
+_pentOmr_de --> Kystkontur : avgrensesAvKystkontur [0..*]
+SOSI_Objekt_PunkterOgLinjer <|-- Innsj_Midtlinje
+SOSI_Objekt_Flater <|-- Innsj_Regulert
+Innsj_Regulert --> FiktivDelelinje : avgrensesAvFiktivdelelinje [0..*]
+Innsj_Regulert --> Dataavgrensning : avgrensesAvDataavgrensning [0..*]
+Innsj_Regulert --> Innsj_Innsj_Sperre : avgrensesAvInnsjøinnsjøsperre [0..*]
+Innsj_Regulert --> Innsj_ElvSperre : avgrensesAvInnsjøElvSperre [0..*]
+Innsj_Regulert --> Innsj_kantRegulert : avgrensesAvInnsjøkantregulert [0..*]
+SOSI_Objekt_PunkterOgLinjer <|-- Skytefeltgrense
+FellesTekst <|-- PresentasjonTekst
+
+@enduml
